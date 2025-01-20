@@ -6,7 +6,85 @@
     <title>StreamFlix</title>
     <link rel="stylesheet" href="/public/style/style.css">
 </head>
-<body>
+<body class=" bg-black ">
+    <div id="splashScreen" class="w-screen h-screen bg-black text-green-500 text-2xl font-medium flex justify-center items-center"><p class="animate-fadeInOut">StreamFlix</p></div>
+
+    <header class="w-full h-10 flex justify-center items-center p-4">
+        <a href="" class=""><p class="text-green-500 text-2xl font-medium">StreamFlix</p></a>
+    </header>
+    <main id="main" class="p-4"> 
+        <section id="buscarPelicula" class="w-full h-12 flex items-center justify-center mb-4">
+            <input type="search" placeholder="Buscar pelicula" class="h-8 p-2 rounded-s">
+            <span class="w-8 h-8 bg-green-700 flex items-center justify-center rounded-e">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="white" fill-rule="evenodd" d="M14.385 15.446a6.751 6.751 0 1 1 1.06-1.06l5.156 5.155a.75.75 0 1 1-1.06 1.06zM6.46 13.884a5.25 5.25 0 1 1 7.43-.005l-.005.005l-.005.004a5.25 5.25 0 0 1-7.42-.004" clip-rule="evenodd"/></svg>
+            </span>
+            
+        </section>
+        <section id="tendencia" class="w-full text-white">
+            <div id="tendencia-busquedad" class="flex justify-between items-center mb-4">
+                <h1 class="text-lg opacity-80">Tendencia</h1>
+                <a href="#tendencia_todas"><button id="btnTendencia" class="w-fit p-2 bg-green-800 rounded-lg">Ver mas</button></a>
+            </div>
+            <div id="tendencia_carrusel" class="h-72 flex overflow-auto gap-2 mb-4">
+                <article class="w-40 h-60 flex-shrink-0">
+                    <img src="https://image.tmdb.org/t/p/w342//kUAG4ZQcsNbRyiPyAr3hLdsVgAq.jpg" alt="pelicula" class="rounded-lg">
+                    <div class="mt-2">
+                        <h4 class="p-1 bg-red-800 w-fit rounded-lg">Pelicula</h4>
+                    </div>
+                </article>
+                <article class="w-40 h-60 flex-shrink-0">
+                    <img src="https://image.tmdb.org/t/p/w342//kUAG4ZQcsNbRyiPyAr3hLdsVgAq.jpg" alt="pelicula" class="rounded-lg">
+                    <div class="mt-2">
+                        <h4 class="p-1 bg-red-800 w-fit rounded-lg">Pelicula</h4>
+                    </div>
+                </article>
+                <article class="w-40 h-60 flex-shrink-0">
+                    <img src="https://image.tmdb.org/t/p/w342//kUAG4ZQcsNbRyiPyAr3hLdsVgAq.jpg" alt="pelicula" class="rounded-lg">
+                    <div class="mt-2">
+                        <h4 class="p-1 bg-red-800 w-fit rounded-lg">Pelicula</h4>
+                    </div>
+                </article>
+                <article class="w-40 h-60 flex-shrink-0">
+                    <img src="https://image.tmdb.org/t/p/w342//kUAG4ZQcsNbRyiPyAr3hLdsVgAq.jpg" alt="pelicula" class="rounded-lg">
+                    <div class="mt-2">
+                        <h4 class="p-1 bg-red-800 w-fit rounded-lg">Pelicula</h4>
+                    </div>
+                </article>
+            </div>
+            <section id="tendencia_todas" class="inactive">
+                <div class="w-full flex items-center p-1">
+                    <span id="salirTendencia">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="white" fill-rule="evenodd" d="M14.03 7.47a.75.75 0 0 1 0 1.06L10.56 12l3.47 3.47a.75.75 0 1 1-1.06 1.06l-4-4a.75.75 0 0 1 0-1.06l4-4a.75.75 0 0 1 1.06 0" clip-rule="evenodd"/></svg>
+                    </span>
+                    <h2 class="w-[95%] text-center text-lg opacity-80 mb-4">Tendencia</h2>
+                </div>
+                <div class="grid grid-cols-2 grid-rows-1 gap-3 justify-items-center mb-12">
+                    <article class="w-40 h-60 flex-shrink-0">
+                    <img src="https://image.tmdb.org/t/p/w342//kUAG4ZQcsNbRyiPyAr3hLdsVgAq.jpg" alt="pelicula" class="rounded-lg">
+                    </article>
+                    <article class="w-40 h-60 flex-shrink-0">
+                        <img src="https://image.tmdb.org/t/p/w342//kUAG4ZQcsNbRyiPyAr3hLdsVgAq.jpg" alt="pelicula" class="rounded-lg">
+                    </article>
+                    <article class="w-40 h-60 flex-shrink-0">
+                        <img src="https://image.tmdb.org/t/p/w342//kUAG4ZQcsNbRyiPyAr3hLdsVgAq.jpg" alt="pelicula" class="rounded-lg">
+                    </article>
+                    <article class="w-40 h-60 flex-shrink-0">
+                        <img src="https://image.tmdb.org/t/p/w342//kUAG4ZQcsNbRyiPyAr3hLdsVgAq.jpg" alt="pelicula" class="rounded-lg">
+                    </article>
+                    <article class="w-40 h-60 flex-shrink-0">
+                        <img src="https://image.tmdb.org/t/p/w342//kUAG4ZQcsNbRyiPyAr3hLdsVgAq.jpg" alt="pelicula" class="rounded-lg">
+                    </article>
+                    <article class="w-40 h-60 flex-shrink-0">
+                        <img src="https://image.tmdb.org/t/p/w342//kUAG4ZQcsNbRyiPyAr3hLdsVgAq.jpg" alt="pelicula" class="rounded-lg">
+                    </article>
+                </div>
+            </section>
+        </section>
+        <section id="ultimos-estrenos" class="w-full text-white">
+           <h2 class="opacity-80">Ultimos estrenos</h2> 
+        </section>
+    </main>
+    
     <script src="/src/secrets.js"></script>
     <script src="/src/main.js"></script>
 </body>
