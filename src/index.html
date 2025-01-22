@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StreamFlix</title>
     <link rel="stylesheet" href="/public/style/style.css">
+    <link rel="shortcut icon" href="/public/asset/svg/F_2_.ico" type="image/x-icon">
 </head>
 <body class=" bg-black ">
     <div id="splashScreen" class="w-screen h-screen bg-black text-green-500 text-2xl font-medium flex justify-center items-center"><p class="animate-fadeInOut">StreamFlix</p></div>
@@ -20,31 +21,44 @@
             </span>
             
         </section>
+        <section id="categoria">
+            <h1 class="text-white text-lg opacity-80 mb-2">Categoria</h1>
+            <nav class="w-full h-12 mb-4 text-white">
+                <ul class="w-full h-full flex items-center space-x-2 overflow-auto">
+                    <li id="categoria1"><a class="w-fit p-2 bg-zinc-800 rounded-lg" href="#">Acción</a></li>
+                    <li id="categoria2"><a class="w-fit p-2 bg-zinc-800 rounded-lg" href="#">Aventura</a></li>
+                    <li id="categoria3"><a class="w-fit p-2 bg-zinc-800 rounded-lg" href="#">Comedia</a></li>
+                    <li id="categoria4"><a class="w-fit p-2 bg-zinc-800 rounded-lg" href="#">Romance</a></li>
+                    <li id="categoria5"><a class="w-fit p-2 bg-zinc-800 rounded-lg" href="#">Musical</a></li>
+                    <li id="categoria6"><a class="w-fit p-2 bg-zinc-800 rounded-lg" href="#">Drama</a></li>
+                </ul>
+            </nav>
+        </section>
         <section id="tendencia" class="w-full text-white">
             <div id="tendencia-busquedad" class="flex justify-between items-center mb-4">
                 <h1 class="text-lg opacity-80">Tendencia</h1>
                 <a href="#tendencia_todas"><button id="btnTendencia" class="w-fit p-2 bg-green-800 rounded-lg">Ver mas</button></a>
             </div>
             <div id="tendencia_carrusel" class="h-72 flex overflow-auto gap-2 mb-4">
-                <article class="w-40 h-60 flex-shrink-0">
+                <article id="pelicula_tendencia" class="w-40 h-60 flex-shrink-0">
                     <img src="https://image.tmdb.org/t/p/w342//kUAG4ZQcsNbRyiPyAr3hLdsVgAq.jpg" alt="pelicula" class="rounded-lg">
                     <div class="mt-2">
                         <h4 class="p-1 bg-red-800 w-fit rounded-lg">Pelicula</h4>
                     </div>
                 </article>
-                <article class="w-40 h-60 flex-shrink-0">
+                <article id="pelicula_tendecia" class="w-40 h-60 flex-shrink-0">
                     <img src="https://image.tmdb.org/t/p/w342//kUAG4ZQcsNbRyiPyAr3hLdsVgAq.jpg" alt="pelicula" class="rounded-lg">
                     <div class="mt-2">
                         <h4 class="p-1 bg-red-800 w-fit rounded-lg">Pelicula</h4>
                     </div>
                 </article>
-                <article class="w-40 h-60 flex-shrink-0">
+                <article id="pelicula_tendecia" class="w-40 h-60 flex-shrink-0">
                     <img src="https://image.tmdb.org/t/p/w342//kUAG4ZQcsNbRyiPyAr3hLdsVgAq.jpg" alt="pelicula" class="rounded-lg">
                     <div class="mt-2">
                         <h4 class="p-1 bg-red-800 w-fit rounded-lg">Pelicula</h4>
                     </div>
                 </article>
-                <article class="w-40 h-60 flex-shrink-0">
+                <article id="pelicula_tendecia" class="w-40 h-60 flex-shrink-0">
                     <img src="https://image.tmdb.org/t/p/w342//kUAG4ZQcsNbRyiPyAr3hLdsVgAq.jpg" alt="pelicula" class="rounded-lg">
                     <div class="mt-2">
                         <h4 class="p-1 bg-red-800 w-fit rounded-lg">Pelicula</h4>
@@ -80,8 +94,72 @@
                 </div>
             </section>
         </section>
-        <section id="ultimos-estrenos" class="w-full text-white">
-           <h2 class="opacity-80">Ultimos estrenos</h2> 
+        <section id="ultimos-estrenos" class="w-full h-auto text-white mt-4">
+           <h2 class="opacity-80 mb-2">Ultimos estrenos</h2> 
+           <article id="ultimos-estrenos_1" class="w-full h-44 flex items-center space-x-4 mb-4 p-2 border-2 border-zinc-800 rounded-lg">
+            <div class="w-full flex flex-col justify-center gap-2">
+                <h2 class="text-sm">Avatar: El sentido del agua</h2>
+                <p class="text-xs">Más de una década después de los acontecimientos de 'Avatar', los Na'vi Jake Sully, Neytiri y sus hijos viven en paz en los bosques de Pandora hasta que regresan los hombres del cielo.</p>
+                <p class="flex items-center gap-2 text-lg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="gold" d="M12.865 2.996a1 1 0 0 0-1.73 0L8.421 7.674a1.25 1.25 0 0 1-.894.608L2.44 9.05c-.854.13-1.154 1.208-.488 1.76l3.789 3.138c.35.291.515.75.43 1.197L5.18 20.35a1 1 0 0 0 1.448 1.072l4.79-2.522a1.25 1.25 0 0 1 1.164 0l4.79 2.522a1 1 0 0 0 1.448-1.072l-.991-5.205a1.25 1.25 0 0 1 .43-1.197l3.79-3.139c.665-.55.365-1.63-.49-1.759l-5.085-.768a1.25 1.25 0 0 1-.895-.608z"/></svg>7.5</p>
+            </div>
+            <img class="h-full rounded-lg" src="https://image.tmdb.org/t/p/w342//kUAG4ZQcsNbRyiPyAr3hLdsVgAq.jpg" alt="pelicula" class="rounded-lg">
+           </article>
+           <article class="w-full h-44 flex items-center space-x-4 mb-4 p-2 border-2 border-zinc-800 rounded-lg">
+            <div class="w-full flex flex-col justify-center gap-2">
+                <h2 class="text-sm">Avatar: El sentido del agua</h2>
+                <p class="text-xs">Más de una década después de los acontecimientos de 'Avatar', los Na'vi Jake Sully, Neytiri y sus hijos viven en paz en los bosques de Pandora hasta que regresan los hombres del cielo.</p>
+                <p class="flex items-center gap-2 text-lg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="gold" d="M12.865 2.996a1 1 0 0 0-1.73 0L8.421 7.674a1.25 1.25 0 0 1-.894.608L2.44 9.05c-.854.13-1.154 1.208-.488 1.76l3.789 3.138c.35.291.515.75.43 1.197L5.18 20.35a1 1 0 0 0 1.448 1.072l4.79-2.522a1.25 1.25 0 0 1 1.164 0l4.79 2.522a1 1 0 0 0 1.448-1.072l-.991-5.205a1.25 1.25 0 0 1 .43-1.197l3.79-3.139c.665-.55.365-1.63-.49-1.759l-5.085-.768a1.25 1.25 0 0 1-.895-.608z"/></svg>7.5</p>
+              </div>
+            <img class="h-full rounded-lg" src="https://image.tmdb.org/t/p/w342//kUAG4ZQcsNbRyiPyAr3hLdsVgAq.jpg" alt="pelicula" class="rounded-lg">
+           </article>
+           <article class="w-full h-44 flex items-center space-x-4 mb-4 p-2 border-2 border-zinc-800 rounded-lg">
+            <div class="w-full flex flex-col justify-center gap-2">
+                <h2 class="text-sm">Avatar: El sentido del agua</h2>
+                <p class="text-xs">Más de una década después de los acontecimientos de 'Avatar', los Na'vi Jake Sully, Neytiri y sus hijos viven en paz en los bosques de Pandora hasta que regresan los hombres del cielo.</p>
+                <p class="flex items-center gap-2 text-lg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="gold" d="M12.865 2.996a1 1 0 0 0-1.73 0L8.421 7.674a1.25 1.25 0 0 1-.894.608L2.44 9.05c-.854.13-1.154 1.208-.488 1.76l3.789 3.138c.35.291.515.75.43 1.197L5.18 20.35a1 1 0 0 0 1.448 1.072l4.79-2.522a1.25 1.25 0 0 1 1.164 0l4.79 2.522a1 1 0 0 0 1.448-1.072l-.991-5.205a1.25 1.25 0 0 1 .43-1.197l3.79-3.139c.665-.55.365-1.63-.49-1.759l-5.085-.768a1.25 1.25 0 0 1-.895-.608z"/></svg>7.5</p>
+            </div>
+            <img class="h-full rounded-lg" src="https://image.tmdb.org/t/p/w342//kUAG4ZQcsNbRyiPyAr3hLdsVgAq.jpg" alt="pelicula" class="rounded-lg">
+           </article>
+           <article class="w-full h-44 flex items-center space-x-4 mb-4 p-2 border-2 border-zinc-800 rounded-lg">
+            <div class="w-full flex flex-col justify-center gap-2">
+                <h2 class="text-sm">Avatar: El sentido del agua</h2>
+                <p class="text-xs">Más de una década después de los acontecimientos de 'Avatar', los Na'vi Jake Sully, Neytiri y sus hijos viven en paz en los bosques de Pandora hasta que regresan los hombres del cielo.</p>
+                <p class="flex items-center gap-2 text-lg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="gold" d="M12.865 2.996a1 1 0 0 0-1.73 0L8.421 7.674a1.25 1.25 0 0 1-.894.608L2.44 9.05c-.854.13-1.154 1.208-.488 1.76l3.789 3.138c.35.291.515.75.43 1.197L5.18 20.35a1 1 0 0 0 1.448 1.072l4.79-2.522a1.25 1.25 0 0 1 1.164 0l4.79 2.522a1 1 0 0 0 1.448-1.072l-.991-5.205a1.25 1.25 0 0 1 .43-1.197l3.79-3.139c.665-.55.365-1.63-.49-1.759l-5.085-.768a1.25 1.25 0 0 1-.895-.608z"/></svg>7.5</p>
+            </div>
+            <img class="h-full rounded-lg" src="https://image.tmdb.org/t/p/w342//kUAG4ZQcsNbRyiPyAr3hLdsVgAq.jpg" alt="pelicula" class="rounded-lg">
+           </article>
+        </section>
+        <section id="pelicula" class="h-screen relative inactive">
+            <article class="bg-white rounded-t-lg">
+                <span id="salirPelicula" class="absolute top-10 left-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path fill="white" fill-rule="evenodd" d="M14.03 7.47a.75.75 0 0 1 0 1.06L10.56 12l3.47 3.47a.75.75 0 1 1-1.06 1.06l-4-4a.75.75 0 0 1 0-1.06l4-4a.75.75 0 0 1 1.06 0" clip-rule="evenodd"/></svg>
+                </span>
+                <img src="https://image.tmdb.org/t/p/w342//kUAG4ZQcsNbRyiPyAr3hLdsVgAq.jpg" alt="pelicula" class="h-full w-full rounded-lg">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent pointer-events-none"></div>
+                <div id="descripcion_pelicula" class="h-full bg-white rounded-t-lg relative -top-10 p-4 flex flex-col gap-2 ">
+                    <div class="w-full flex flex-col justify-center gap-2">
+                        <h2 class="text-sm">Avatar: El sentido del agua</h2>
+                        <p class="text-xs">Más de una década después de los acontecimientos de 'Avatar', los Na'vi Jake Sully, Neytiri y sus hijos viven en paz en los bosques de Pandora hasta que regresan los hombres del cielo.</p>
+                        <p class="flex items-center gap-2 text-lg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="gold" d="M12.865 2.996a1 1 0 0 0-1.73 0L8.421 7.674a1.25 1.25 0 0 1-.894.608L2.44 9.05c-.854.13-1.154 1.208-.488 1.76l3.789 3.138c.35.291.515.75.43 1.197L5.18 20.35a1 1 0 0 0 1.448 1.072l4.79-2.522a1.25 1.25 0 0 1 1.164 0l4.79 2.522a1 1 0 0 0 1.448-1.072l-.991-5.205a1.25 1.25 0 0 1 .43-1.197l3.79-3.139c.665-.55.365-1.63-.49-1.759l-5.085-.768a1.25 1.25 0 0 1-.895-.608z"/></svg>7.5</p>
+                    </div>
+                    <div class="w-full h-full flex items-center space-x-2 mb-2">
+                        <p class="w-fit p-2 bg-green-600 rounded-lg text-white">Acción</p>
+                        <p class="w-fit p-2 bg-green-600 rounded-lg text-white">Aventura</p>
+                        <p class="w-fit p-2 bg-green-600 rounded-lg text-white">Drama</p>
+                    </div>
+                    <div id="tendencia_carrusel" class="h-72 flex items-center overflow-auto gap-2">
+                        <article class="w-40 h-60 flex-shrink-0">
+                            <img src="https://image.tmdb.org/t/p/w342//kUAG4ZQcsNbRyiPyAr3hLdsVgAq.jpg" alt="pelicula" class="rounded-lg">
+                        </article>
+                        <article class="w-40 h-60 flex-shrink-0">
+                            <img src="https://image.tmdb.org/t/p/w342//kUAG4ZQcsNbRyiPyAr3hLdsVgAq.jpg" alt="pelicula" class="rounded-lg">
+                        </article>
+                        <article class="w-40 h-60 flex-shrink-0">
+                            <img src="https://image.tmdb.org/t/p/w342//kUAG4ZQcsNbRyiPyAr3hLdsVgAq.jpg" alt="pelicula" class="rounded-lg">
+                        </article>
+                    </div>
+                </div>
+            </article>
         </section>
     </main>
     
